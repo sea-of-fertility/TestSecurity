@@ -1,0 +1,20 @@
+<!-- join.mustache -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>회원가입</title>
+</head>
+<body>
+<form action="/joinProc" method="post"> <!-- action에는 데이터를 보낼 URL을 작성하고, method는 데이터 전송 방식을 지정합니다. -->
+    <label for="userName">사용자 이름:</label> <!-- 라벨 생성 -->
+    <input type="text" id="userName" name="userName"> <!-- 사용자 이름 입력란. name 속성은 컨트롤러에서 데이터를 받을 때 사용됩니다. -->
+    <br>
+    <label for="password">비밀번호:</label> <!-- 라벨 생성 -->
+    <input type="password" id="password" name="password"> <!-- 비밀번호 입력란. 입력 내용이 보이지 않게 type은 password로 설정합니다. -->
+
+
+    <br>
+    <input type="submit" value="전송"> <!-- 전송 버튼 -->
+</form>
+</body>
+</html>

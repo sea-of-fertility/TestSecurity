@@ -1,0 +1,17 @@
+server:
+  servlet:
+    session:
+      timeout: 90m
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/testsecurity
+    username: testsecurity
+    password: '0000'
+
+  mustache:
+    servlet:
+      expose-request-attributes: true
